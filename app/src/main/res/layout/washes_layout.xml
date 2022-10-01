@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:fontFamily=""
+            android:text="Name : Sonit"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wash_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/name"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Number Of Clothes : 20"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wash_token"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wash_quantity"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Token :"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wash_token_number"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/wash_quantity"
+            android:layout_toRightOf="@+id/wash_token"
+            android:background="#269"
+
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:text="555"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wash_drop_off_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wash_token"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Drop Off Date : 26.01.2022"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wash_pick_up_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wash_drop_off_date"
+
+            android:text="Pick Up Date : 30.01.2022"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
